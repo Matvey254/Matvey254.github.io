@@ -1,0 +1,69 @@
+h1{
+	text-align: center;
+	margin: 40px 0 40px;
+	font-size: 30px;
+	color:#ecf0f1;
+	text-shadow: 2px 2px 4px #000;
+	font-family: cursive;
+}
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #535d67;
+	border-radius: 1px solid black;
+	border-radius: 8px;
+	box-shadow: 2px 2px 4px #000;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s easy 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 170px;
+}
+a:nth-child(2) {
+	width: 270px;
+}
+a:nth-child(4) {
+	width: 410px;
+}
+nav .start-home, a:nth-child(1):hover ~ .animation {
+	width: 100px
+	left: 0;
+	background-color: #labc9c;
+}
+nav .start-home, a:nth-child(2):hover ~ .animation {
+	width: 110px
+	left: 100;
+	background-color: #labc9c;
+
+}
+nav .start-home, a:nth-child(5):hover ~ .animation {
+	width: 120px
+	left: 470;
+	background-color: #labc9c;
+}
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #1F2833;
+}
